@@ -5,7 +5,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 import Header from './components/Header.vue';
 
-let scrollInstance;
+let scrollInstance : any;
 
 const appel = ref(null);
 
@@ -17,7 +17,7 @@ onMounted(() => {
   });
 
   const timeout = setTimeout(() => {
-    scrollInstance.update();
+    (scrollInstance as any).update();
     console.info('Update scroll instance')
   }, 100); // Дайте немного времени для загрузки контента
 
