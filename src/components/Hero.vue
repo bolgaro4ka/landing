@@ -1,13 +1,17 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
 
-document.addEventListener('mousemove', (e) => {
-  Object.assign(document.documentElement, {
-    style: `
+onMounted(() => {
+  document.addEventListener('mousemove', (e) => {
+    Object.assign(document.documentElement, {
+      style: `
         --move-x: ${(e.clientX - window.innerWidth / 2) * -.005}deg;
         --move-y: ${(e.clientY - window.innerHeight / 2) * -0.01}deg;
         `
+    })
   })
 })
+
 
 </script>
 
@@ -23,7 +27,10 @@ document.addEventListener('mousemove', (e) => {
           <div class="hero-content">
             <h1>Всем привет, я Bolgaro4ka!</h1>
             <p class="hero-content__p"> и это моя страница</p>
-            <button class="button-start" onclick="window.location.href = '/compiler'"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg></button>
+            <button class="button-start" onclick="window.location.href = '/compiler'"><svg
+                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
+              </svg></button>
           </div>
         </div>
         <div class="layers__item layer-4">

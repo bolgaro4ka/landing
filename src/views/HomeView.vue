@@ -2,6 +2,8 @@
 import Hero from '../components/Hero.vue'
 import AboutMe from '../components/AboutMe.vue';
 import MyProjects from '@/components/MyProjects.vue';
+import BuySite from '@/components/BuySite.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -9,5 +11,7 @@ import MyProjects from '@/components/MyProjects.vue';
     <Hero />
     <AboutMe />
     <MyProjects />
+    <BuySite />
+    <Footer />
   </main>
 </template>
