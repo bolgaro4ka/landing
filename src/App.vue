@@ -12,7 +12,7 @@ const appel = ref(null);
 onMounted(() => {
 
   scrollInstance = new LocomotiveScroll({
-    el: document.querySelector('.app'),
+    el: (document.querySelector('.app') as HTMLElement),
     smooth: true,
   });
 
