@@ -16,7 +16,7 @@
         </div>
         <div class="aboutme__info">
           <p>Направление</p>
-          <p>FullStack Web и немного Machine Learning и Desktop</p>
+          <p>FullStack Web, немного Machine Learning и Desktop</p>
         </div>
         <div class="aboutme__info">
           <p>GitHub</p>
