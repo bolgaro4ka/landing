@@ -6,16 +6,16 @@ import { useScrollStore } from '@/stores/scrollStore';
 
 const scrollStore = useScrollStore();
 onMounted(() => {
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
       e.preventDefault(); // Отменяем стандартное поведение
-      const targetElement = document.getElementById(this.getAttribute('href').substring(1));
+      const targetElement = document.getElementById(anchor.getAttribute('href')!.substring(1));
       if (targetElement) {
         scrollStore.scrollTo(targetElement);
       }
     });
   });
-})
+});
 
 
 
