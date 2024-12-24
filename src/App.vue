@@ -4,17 +4,22 @@ import { onMounted, onUnmounted, ref } from 'vue';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 import Header from './components/Header.vue';
+import { useScrollStore } from '@/stores/scrollStore';
 
-let scrollInstance : any;
+const scrollStore = useScrollStore();
+
+let scrollInstance: any;
 
 const appel = ref(null);
 
 onMounted(() => {
 
-  scrollInstance = new LocomotiveScroll({
+  const scrollInstance = new LocomotiveScroll({
     el: (document.querySelector('.app') as HTMLElement),
     smooth: true,
   });
+
+  scrollStore.setScroll(scrollInstance);
 
   const timeout = setTimeout(() => {
     (scrollInstance as any).update();

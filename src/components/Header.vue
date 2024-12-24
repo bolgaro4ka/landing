@@ -1,5 +1,24 @@
 <script setup lang="ts">
+import LocomotiveScroll from 'locomotive-scroll';
+import { onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
+import { useScrollStore } from '@/stores/scrollStore';
+
+const scrollStore = useScrollStore();
+onMounted(() => {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Отменяем стандартное поведение
+      const targetElement = document.getElementById(this.getAttribute('href').substring(1));
+      if (targetElement) {
+        scrollStore.scrollTo(targetElement);
+      }
+    });
+  });
+})
+
+
+
 
 </script>
 
@@ -8,7 +27,9 @@ import { RouterLink } from 'vue-router';
     <RouterLink to="/" class="logo">Bolgaro4ka</RouterLink>
 
     <div class="header__links">
-      <RouterLink to="/Проекты" class="header__link">Проекты</RouterLink>
+      <a href="#about" class="header__link">О мне</a>
+      <a href="#projects" class="header__link">Проекты</a>
+      <a href="#buysite" class="header__link">Заказ сайта</a>
     </div>
   </header>
 </template>
@@ -23,7 +44,7 @@ header {
   background-color: transparent;
   position: fixed;
   height: 60px;
-  width: 100vw;
+  width: 100%;
   z-index: 2100;
   top: 0;
   left: 0;
@@ -44,6 +65,16 @@ header {
       text-decoration: none;
     }
 
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  header {
+    .header__links a {
+      font-size: 15px !important;
+    }
   }
 
 }
