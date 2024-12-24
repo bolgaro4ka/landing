@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
+import { useScrollStore } from '@/stores/scrollStore';
+
+const scrollStore = useScrollStore();
 
 onMounted(() => {
   document.addEventListener('mousemove', (e) => {
@@ -10,6 +13,16 @@ onMounted(() => {
         `
     })
   })
+
+  document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault(); // Отменяем стандартное поведение
+      const targetElement = document.getElementById(anchor.getAttribute('href')!.substring(1));
+      if (targetElement) {
+        scrollStore.scrollTo(targetElement);
+      }
+    });
+  });
 })
 
 
@@ -27,10 +40,10 @@ onMounted(() => {
           <div class="hero-content">
             <h1>Всем привет, я Bolgaro4ka!</h1>
             <p class="hero-content__p"> и это моя страница</p>
-            <button class="button-start" onclick="window.location.href = '/#about'"><svg
-                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+            <a class="button-start" href="#about"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
                 <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
-              </svg></button>
+              </svg></a>
           </div>
         </div>
         <div class="layers__item layer-4">
@@ -126,6 +139,9 @@ onMounted(() => {
   letter-spacing: calc(var(--index)*-.15);
   line-height: 1.35em;
   margin-top: calc(var(--index)*5.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hero-content span {
@@ -163,6 +179,11 @@ onMounted(() => {
   cursor: pointer;
   user-select: none;
   margin-top: calc(var(--index)*3.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  align-self: center;
 }
 
 .layer-4,
