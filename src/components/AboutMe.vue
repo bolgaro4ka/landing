@@ -3,7 +3,7 @@
 
 
 <template>
-  <div class="aboutme">
+  <div class="aboutme" id="about">
     <div class="aboutme__img">
       <img src="https://avatars.githubusercontent.com/u/123888141?v=4" />
     </div>
@@ -232,6 +232,17 @@
       img {
         width: 100%;
       }
+    }
+  }
+
+  .aboutme__tech {
+    img {
+      height: 40px !important;
+    }
+
+    p {
+      margin-top: -5px !important;
+      opacity: 0.5;
     }
   }
 

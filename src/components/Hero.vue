@@ -27,7 +27,7 @@ onMounted(() => {
           <div class="hero-content">
             <h1>Всем привет, я Bolgaro4ka!</h1>
             <p class="hero-content__p"> и это моя страница</p>
-            <button class="button-start" onclick="window.location.href = '/compiler'"><svg
+            <button class="button-start" onclick="window.location.href = '/#about'"><svg
                 xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
                 <path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z" />
               </svg></button>
@@ -169,5 +169,17 @@ onMounted(() => {
 .layer-5,
 .layer-6 {
   pointer-events: none;
+}
+
+@media screen and (max-width: 1015px) {
+  .layers__container {
+    height: 50vh;
+  }
+
+  .layer-5 {
+    transform: translateZ(300px) scale(.9);
+    background-size: calc(var(--index)*25);
+    background-position: calc(var(--index)*5) calc(var(--index)*30);
+  }
 }
 </style>

@@ -28,7 +28,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 </script>
 
 <template>
-  <div class="buysite">
+  <div class="buysite" id="buysite">
     <div class="content">
       <h2>Хотите крутой прогрессивный сайт?</h2>
       <div>
