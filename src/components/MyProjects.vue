@@ -18,10 +18,10 @@
             style="fill: green;">
             <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
           </svg>
-          <p>Доступен в интернете</p>
+          <p>Доступен в интернете (ныне платформа продана)</p>
         </div>
         <div class="project__body">
-          <h2>Paia1nikVPN</h2>
+          <h2>PVPN</h2>
           <p>Платформа для покупки VPN</p>
           <p style="font-size: 12px;">By bolgaro4ka</p>
 
