@@ -72,6 +72,8 @@
               </svg>
               <p>Q</p>
             </a>
+          </div>
+          <div class="project__link">
             <a href="https://q.blgr.space">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                 fill="#e8eaed">
@@ -116,6 +118,8 @@
               </svg>
               <p>GammaChat</p>
             </a>
+          </div>
+          <div class="project__link">
             <a href="https://gamma.blgr.space">
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                 fill="#e8eaed">
@@ -256,6 +260,11 @@
   display: flex;
   gap: 20px;
   max-width: 800px;
+}
+
+.project__footer {
+  display: flex;
+  gap: 10px;
 }
 
 .projects {
