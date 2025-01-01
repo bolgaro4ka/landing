@@ -18,7 +18,7 @@
             style="fill: green;">
             <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
           </svg>
-          <p>Доступен в интернете (ныне платформа продана)</p>
+          <p>Доступен в интернете</p>
         </div>
         <div class="project__body">
           <h2>PVPN</h2>
@@ -49,11 +49,11 @@
             </path>
           </svg>
           <p>Доступен на GitHub</p>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red">
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"
+            style="fill: green;">
+            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
           </svg>
-          <p>Не доступен в интернете</p>
+          <p>Доступен в интернете</p>
         </div>
         <div class="project__body">
           <h2>Q</h2>
@@ -95,11 +95,11 @@
             </path>
           </svg>
           <p>Доступен на GitHub</p>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red">
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"
+            style="fill: green;">
+            <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
           </svg>
-          <p>Не доступен в интернете</p>
+          <p>Доступен в интернете</p>
         </div>
         <div class="project__body">
           <h2>GammaChat</h2>
