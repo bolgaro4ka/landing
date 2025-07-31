@@ -3,7 +3,7 @@ import { onMounted } from 'vue';
 
 
 onMounted(() => {
-  (function(d,s){d.getElementById("licnt7296").src=
+  (function(d,s){(d.getElementById("licnt7296") as HTMLImageElement).src=
       "https://counter.yadro.ru/hit?t20.6;r"+escape(d.referrer)+
       ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
       (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+

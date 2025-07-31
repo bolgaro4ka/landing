@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import LocomotiveScroll from 'locomotive-scroll';
 import { onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
 import { useScrollStore } from '@/stores/scrollStore';
