@@ -48,7 +48,7 @@
               <p>CSS3</p>
             </div>
             <div class="aboutme__tech">
-              <img src="https://i0.wp.com/theicom.org/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1&w=640">
+              <img src="https://www.freepnglogos.com/uploads/javascript/javascript-wysiwyg-editor-and-reusable-assets-coherent-editor-5.png">
               <p>JavaScript</p>
             </div>
             <div class="aboutme__tech">
@@ -83,16 +83,16 @@
               <p>SQLite</p>
             </div>
             <div class="aboutme__tech">
-              <img src="https://static-00.iconduck.com/assets.00/mongodb-original-icon-921x2048-hvrb89lu.png">
+              <img src="https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png">
               <p>MongoDB</p>
             </div>
             <div class="aboutme__tech">
-              <img src="https://static-00.iconduck.com/assets.00/nextjs-icon-512x309-yynfidez.png"
+              <img src="https://devtop.io/wp-content/uploads/2022/11/Next-JS.png"
                 style="filter: invert(1);">
               <p>Next JS</p>
             </div>
             <div class="aboutme__tech">
-              <img src="https://seeklogo.com/images/G/greensock-gsap-icon-logo-13BB451E88-seeklogo.com.png">
+              <img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_66a83568a63af4c10e6335b71a54201a/greensock-animation-platform.png">
               <p>GSAP</p>
             </div>
             <div class="aboutme__tech">

@@ -48,7 +48,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
           </li>
         </ul>
       </div>
-      <a href="https://t.me/papyas_07" target="_blank">
+      <a href="https://t.me/blgr4k" target="_blank">
         <button>
           <FontAwesomeIcon :icon="faTelegram" /> Тогда вам в телеграм
         </button>

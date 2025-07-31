@@ -1,4 +1,17 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+
+
+onMounted(() => {
+  (function(d,s){d.getElementById("licnt7296").src=
+      "https://counter.yadro.ru/hit?t20.6;r"+escape(d.referrer)+
+      ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+      (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+      ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+      (document,screen)
+})
+
+
 </script>
 
 
@@ -18,7 +31,7 @@
     </div>
     <div class="footer__footer">
 
-      <a class="social__link" href="https://t.me/papyas_07">
+      <a class="social__link" href="https://t.me/blgr4k">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png">
         <p>telegram</p>
@@ -55,6 +68,11 @@
 
 
     </div>
+    <!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
+      target="_blank" style="display: flex; align-items: end; justify-content: end;"><img id="licnt7296" width="88" height="31" style="border:0" 
+      title="LiveInternet: number of pageviews for 24 hours, of visitors for 24 hours and for today is shown"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+      alt=""/></a><!--/LiveInternet-->
   </footer>
 </template>
 
